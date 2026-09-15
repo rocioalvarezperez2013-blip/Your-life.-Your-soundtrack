@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #0d0d14;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #aaa;
+}
+
+.scene,
+.music {
+    margin-top: 35px;
+    padding: 25px;
+    border: 1px solid #292938;
+    border-radius: 20px;
+    background: #151520;
+}
+
+.label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.scene h2,
+.music h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.scene p:last-child {
+    color: #aaa;
+}
+
+button {
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sensors {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 12px;
+    color: #777;
+}
+
+/* 🎧 ARTISTAS SELECCIONADOS */
+
+.artists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.artist {
+    margin-top: 0;
+    background: #20202d;
+    color: white;
+    border: 1px solid #39394a;
+    transition: 0.2s;
+}
+
+.artist:hover {
+    transform: translateY(-2px);
+}
+
+.artist.selected {
+    background: white;
+    color: #0d0d14;
+    border-color: white;
+    transform: scale(1.05);
+}
